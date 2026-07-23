@@ -103,6 +103,6 @@ window.PROJECTS_DATA = [
     "tools": [
       "Canva"
     ],
-    "image": "assets/images/project-nkflex.png"
+    "image": "assets/images/project-nk-flex.png"
   }
 ]
