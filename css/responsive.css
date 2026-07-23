@@ -1,0 +1,99 @@
+/* ════════════════════════════════════════════════
+   AXVELO — Responsive Styles
+   Mobile-first breakpoint overrides
+════════════════════════════════════════════════ */
+
+/* ── Hide hero orbs on mobile ── */
+@media (max-width: 639px) {
+  .hero-orb { display: none; }
+  .scroll-indicator { display: none; }
+  #mouse-glow { display: none !important; }
+  .scroll-progress-track { display: none; }
+}
+
+/* ── Navbar mobile ── */
+@media (max-width: 767px) {
+  .nav-links {
+    gap: 1rem;
+  }
+  .nav-link {
+    display: none; /* hide text links on small screens */
+  }
+  .btn-contact {
+    display: inline-flex;
+  }
+  .navbar-logo-img {
+    height: 36px;
+    width: auto;
+  }
+}
+
+/* ── Hero watermark mobile ── */
+@media (max-width: 479px) {
+  .hero-logo-watermark img {
+    width: 200px;
+    opacity: .07;
+  }
+}
+
+/* ── Hero on mobile ── */
+@media (max-width: 480px) {
+  .section-hero {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+    min-height: 90dvh;
+  }
+  .hero-ctas { flex-direction: column; width: 100%; }
+  .hero-ctas .btn { width: 100%; }
+}
+
+/* ── About on mobile ── */
+@media (max-width: 767px) {
+  .about-right {
+    border-left: none;
+    border-top: 1px solid rgba(255,255,255,.10);
+    padding-left: 0;
+    padding-top: 2rem;
+  }
+}
+
+/* ── Why Choose Us on mobile ── */
+@media (max-width: 479px) {
+  .why-reasons { grid-template-columns: 1fr; }
+}
+
+/* ── Contact on mobile ── */
+@media (max-width: 479px) {
+  .contact-heading { font-size: 2rem; }
+}
+
+/* ── Floating buttons on mobile (move slightly) ── */
+@media (max-width: 479px) {
+  .floating-btn { right: 1rem; }
+  .floating-instagram { bottom: 5rem; }
+  .floating-whatsapp  { bottom: 1rem; }
+}
+
+/* ── Scroll top button position on mobile ── */
+@media (max-width: 479px) {
+  .scroll-top-btn {
+    right: 1rem;
+    bottom: 9rem;
+  }
+}
+
+/* ── Tablet (640px – 1023px) ── */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .section-heading { font-size: clamp(1.5rem, 3.5vw, 2.25rem); }
+}
+
+/* ── Large screens ── */
+@media (min-width: 1280px) {
+  .container { padding: 0 2rem; }
+  .section-about,
+  .section-why,
+  .section-portfolio,
+  .section-services,
+  .section-founder,
+  .section-contact { padding: 8rem 0; }
+}

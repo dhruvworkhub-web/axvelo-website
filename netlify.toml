@@ -1,0 +1,16 @@
+# ── Netlify configuration for AXVELO static site ──────────────────
+[build]
+  # No build command needed — just upload the Website/ folder directly.
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options        = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy        = "strict-origin-when-cross-origin"
+
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200

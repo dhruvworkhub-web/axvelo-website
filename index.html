@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AXVELO — Creative Agency | We Move Fast, We Move Smart</title>
+  <meta name="description" content="AXVELO is a fast, smart creative agency offering branding, graphic design, video editing, and digital marketing services that help brands stand out and grow." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="AXVELO — Creative Agency | We Move Fast, We Move Smart" />
+  <meta property="og:description" content="AXVELO is a fast, smart creative agency offering branding, graphic design, video editing, and digital marketing services." />
+  <meta property="og:type"        content="website" />
+  <meta property="og:image"       content="assets/opengraph.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="AXVELO — Creative Agency | We Move Fast, We Move Smart" />
+  <meta name="twitter:description" content="AXVELO is a fast, smart creative agency offering branding, graphic design, video editing, and digital marketing services." />
+  <meta name="twitter:image"       content="assets/opengraph.jpg" />
+  
+<link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       BACKGROUND LAYERS
+  ══════════════════════════════════════════════════ -->
+  <div id="bg-layer" aria-hidden="true">
+    <div class="mesh-blob mesh-blob-1"></div>
+    <div class="mesh-blob mesh-blob-2"></div>
+    <div class="mesh-blob mesh-blob-3"></div>
+    <div class="mesh-blob mesh-blob-4"></div>
+    <div class="mesh-blob mesh-blob-5"></div>
+    <div class="noise-overlay"></div>
+  </div>
+  <div id="particles-container" aria-hidden="true"></div>
+  <div id="mouse-glow"          aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════ -->
+  <header id="navbar">
+    <div class="container navbar-inner">
+      <div class="logo">
+        <img src="assets/images/logo.png" alt="AXVELO Logo" class="navbar-logo-img" />
+        <span class="logo-ax">AX</span><span class="logo-velo">VELO</span><span class="logo-dot">.</span>
+      </div>
+      <nav class="nav-links" id="nav-links">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#work">Work</a>
+        <a class="nav-link" href="#founder">Founder</a>
+        <a class="btn btn-contact" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════
+       MAIN CONTENT
+  ══════════════════════════════════════════════════ -->
+  <main>
+
+    <!-- ─── HERO ──────────────────────────────────── -->
+    <section id="hero" class="section-hero">
+      <div class="hero-bg-glow"></div>
+      <div class="hero-conic-rays"></div>
+
+      <!-- logo watermark behind content -->
+      <div class="hero-logo-watermark" aria-hidden="true">
+        <img src="assets/images/logo.png" alt="" />
+      </div>
+
+      <!-- floating orbs -->
+      <div class="hero-orb hero-orb-1" data-parallax="0.6" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-2" data-parallax="-0.4" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-3" data-parallax="0.3" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <!-- badge -->
+        <div class="hero-badge reveal">
+          <span class="hero-badge-dot"></span>
+          Creative Agency
+        </div>
+
+        <!-- main heading -->
+        <h1 class="hero-title reveal">
+          <span class="hero-ax">AX</span><span class="hero-velo">VELO</span>
+        </h1>
+
+        <!-- sub-heading -->
+        <p class="hero-sub reveal">
+          We Move Fast <span class="hero-divider">|</span> We Move Smart
+        </p>
+
+        <!-- CTAs -->
+        <div class="hero-ctas reveal">
+          <a href="#contact" class="btn btn-primary magnet">Book Now</a>
+          <a href="#work"    class="btn btn-outline  magnet">Explore Work</a>
+        </div>
+      </div>
+
+      <!-- scroll indicator -->
+      <div class="scroll-indicator">
+        <span class="scroll-label">Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ─── TOOLS MARQUEE ─────────────────────────── -->
+    <section class="section-tools" aria-label="Tools we use">
+      <div class="marquee-fade-left"></div>
+      <div class="marquee-fade-right"></div>
+      <div class="marquee-track" id="tools-marquee">
+        <!-- Populated by main.js from SITE_CONFIG.tools -->
+      </div>
+    </section>
+
+    <!-- ─── ABOUT ─────────────────────────────────── -->
+    <section id="about" class="section-about">
+      <div class="about-bg-glow"></div>
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-left reveal-left">
+            <h2 class="section-label">
+              <span class="label-line"></span>About AXVELO
+            </h2>
+            <h3 class="section-heading">
+              We Don't Just Design.<br>
+              <span class="text-muted">We Deliver Impact.</span>
+            </h3>
+          </div>
+          <div class="about-right reveal-right">
+            <p>AXVELO is a scrappy, high-performance creative agency built for businesses that want to stand out. From premium graphic design and video editing to conversion-focused website design, we elevate brands with unmatched speed.</p>
+            <p>We know what it takes for gaming lounges, restaurants, and personal brands to dominate their local markets. Premium quality. Fast delivery. Business-focused execution.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── WHY CHOOSE US ─────────────────────────── -->
+    <section class="section-why">
+      <div class="why-bg-glow"></div>
+      <div class="container">
+        <div class="why-grid">
+          <div class="why-left reveal-left">
+            <h2 class="section-label">Why AXVELO?</h2>
+            <h3 class="section-heading">
+              Built for Speed.<br>Designed to Convert.
+            </h3>
+            <p class="why-desc">We don't waste time with bloated agency processes. We move fast, we design with purpose, and we deliver assets that actually grow your business.</p>
+          </div>
+          <div class="why-right reveal-right">
+            <!-- Populated by main.js from SITE_CONFIG.whyChooseUs.reasons -->
+            <div class="why-reasons" id="why-reasons"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PORTFOLIO ─────────────────────────────── -->
+    <section id="work" class="section-portfolio">
+      <div class="portfolio-bg-glow"></div>
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Featured Work</p>
+          <h3 class="section-heading">Premium Results</h3>
+        </div>
+        <!-- Cards populated by portfolio.js from data/projects.js -->
+        <div class="portfolio-grid" id="portfolio-grid"></div>
+      </div>
+    </section>
+
+    <!-- ─── SERVICES ──────────────────────────────── -->
+    <section id="services" class="section-services">
+      <div class="services-bg-glow"></div>
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">What We Do</p>
+          <h3 class="section-heading">Our Services</h3>
+        </div>
+        <!-- Cards populated by main.js from SITE_CONFIG.services -->
+        <div class="services-grid" id="services-grid"></div>
+      </div>
+    </section>
+
+    <!-- ─── FOUNDER ───────────────────────────────── -->
+    <section id="founder" class="section-founder">
+      <div class="founder-bg-glow-left"></div>
+      <div class="founder-bg-glow-right"></div>
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Meet The Founder</p>
+          <h3 class="section-heading">The Vision Behind AXVELO</h3>
+        </div>
+        <div class="founder-grid">
+          <!-- Photo -->
+          <div class="founder-photo-wrap reveal-left">
+            <div class="founder-photo-float">
+              <div class="founder-photo-outer-glow"></div>
+              <div class="founder-photo-frame">
+                <div class="founder-photo-inner">
+                  <img id="founder-photo" src="assets/images/founder.jpg" alt="Dhruv Beniwal — Founder & Creative Director of AXVELO" />
+                  <div class="founder-photo-overlay"></div>
+                  <div class="founder-photo-inset-glow"></div>
+                </div>
+              </div>
+              <div class="founder-badge" id="founder-badge">
+                <span class="founder-badge-role" id="founder-role">Founder &amp; Creative Director</span>
+                <span class="founder-badge-name" id="founder-name-badge">Dhruv Beniwal</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Info -->
+          <div class="founder-info reveal-right">
+            <h4 class="founder-name" id="founder-name">Dhruv Beniwal</h4>
+            <p class="founder-title" id="founder-title">Founder &amp; Creative Director of AXVELO</p>
+            <p class="founder-age" id="founder-age">19 Years Old</p>
+            <p class="founder-bio" id="founder-bio">Dhruv Beniwal is a 19-year-old creative entrepreneur and founder of AXVELO. He specializes in Graphic Design, Website Design, Video Editing, Branding, and Digital Marketing.</p>
+            <div class="founder-skills" id="founder-skills"><!-- populated by JS --></div>
+            <blockquote class="founder-quote">
+              "We Move Fast <span class="text-primary">|</span> We Move Smart."
+            </blockquote>
+            <div class="founder-stats" id="founder-stats"><!-- populated by JS --></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CONTACT ───────────────────────────────── -->
+    <section id="contact" class="section-contact">
+      <div class="contact-top-line"></div>
+      <div class="container text-center">
+        <div class="reveal">
+          <h2 class="contact-heading">
+            Ready to <span class="text-primary">Move Fast?</span>
+          </h2>
+          <p class="contact-sub">
+            Let's build something incredible. Reach out today and let's discuss how we can elevate your brand.
+          </p>
+          <div class="contact-cta">
+            <a class="btn btn-primary btn-lg" id="contact-book-btn" href="mailto:axveloofficial@gmail.com">
+              <i class="fa-solid fa-envelope"></i>&nbsp; Book Now
+            </a>
+          </div>
+          <div class="contact-cards">
+            <a class="contact-card" id="contact-email-card" href="mailto:axveloofficial@gmail.com">
+              <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+              <span class="contact-card-label">Email Us</span>
+              <span class="contact-card-value" id="contact-email-value">axveloofficial@gmail.com</span>
+            </a>
+            <a class="contact-card contact-card-wa" id="contact-wa-card" href="https://wa.me/918619890337" target="_blank" rel="noopener">
+              <div class="contact-card-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <span class="contact-card-label">WhatsApp</span>
+              <span class="contact-card-value">Message Us</span>
+            </a>
+            <a class="contact-card contact-card-ig" id="contact-ig-card" href="https://instagram.com/axvelo.in" target="_blank" rel="noopener">
+              <div class="contact-card-icon"><i class="fa-brands fa-instagram"></i></div>
+              <span class="contact-card-label">Instagram</span>
+              <span class="contact-card-value">@dhruvxbeniwal</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- /main -->
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════ -->
+  <footer id="footer">
+    <div class="footer-glow"></div>
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-ax">AX</span><span class="logo-velo">VELO</span><span class="logo-dot">.</span>
+      </div>
+      <div class="footer-socials">
+<a class="footer-social-btn" href="https://instagram.com/axvelo.in" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+<a class="footer-social-btn" href="https://wa.me/918619890337" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+<a class="footer-social-btn" href="mailto:axveloofficial@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+<a class="footer-social-btn" href="https://www.linkedin.com/in/dhruv-beniwal-986a61414?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+<a class="footer-social-btn" href="https://www.facebook.com/axveloofficial" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+<a class="footer-social-btn" href="https://x.com/axveloofficial" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+<a class="footer-social-btn" href="https://maps.app.goo.gl/HRqmMFVzx1C5YJA19" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+</div>
+      <p class="footer-copyright" id="footer-copyright">
+        &copy; <span id="footer-year"></span> AXVELO. All rights reserved.
+      </p>
+    </div>
+    <button class="footer-top-btn" id="footer-top-btn" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════
+       FLOATING ACTION BUTTONS
+  ══════════════════════════════════════════════════ -->
+  <a class="floating-btn floating-instagram animate-float-y" id="floating-ig"
+     href="https://instagram.com/axvelo.in" target="_blank" rel="noopener" aria-label="Instagram">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+  <a class="floating-btn floating-whatsapp animate-float-y" id="floating-wa"
+     href="https://wa.me/918619890337" target="_blank" rel="noopener" aria-label="WhatsApp"
+     style="animation-delay:0.5s">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- ═══════════════════════════════════════════════
+       SCROLL CONTROLS
+  ══════════════════════════════════════════════════ -->
+  <div class="scroll-progress-track" id="scroll-track">
+    <div class="scroll-progress-fill" id="scroll-fill"></div>
+  </div>
+  <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ═══════════════════════════════════════════════
+       SCRIPTS  (order matters: config → data → app)
+  ══════════════════════════════════════════════════ -->
+  <script src="js/config.js"></script>
+  <script src="data/projects.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
